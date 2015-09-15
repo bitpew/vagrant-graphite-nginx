@@ -1,2 +1,2 @@
 # vagrant-graphite-nginx
-graphite-web on nginx vagrant machine
+carbon-cache and graphite-web on nginx

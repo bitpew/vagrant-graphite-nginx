@@ -1,0 +1,13 @@
+server {
+    listen          0.0.0.0:8000;
+    server_name     $hostname;
+    charset utf-8;
+
+    access_log /var/log/nginx/graphite-web.access.log;
+    error_log /var/log/nginx/graphite-web.error.log;
+
+    location / {
+        include         uwsgi_params;
+        uwsgi_pass     127.0.0.1:3031;
+    }
+}
